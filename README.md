@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# blockchain-based-storage-platform
-=======
 # blockchain-based-storage-platform
 
 1. Core Features
