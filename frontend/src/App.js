@@ -9,6 +9,8 @@ import { Toaster } from "react-hot-toast";
 import { Heading } from "./components/Heading";
 import { Home } from "./components/Home";
 import { Dashboard } from "./components/Dashboard.jsx";
+import { Wallet } from "./components/Wallet.jsx";
+import { Requests_Permissions } from "./components/Requests_Permissions.jsx";
 
 import { Web3Provider } from "@ethersproject/providers";
 
@@ -45,6 +47,12 @@ const App = () => {
               element={<Home connectWallet={connectWallet} />}
             />
             <Route exact="true" path="/dashboard" element={<Dashboard />} />
+            <Route exact="true" path="/wallet" element={<Wallet />} />
+            <Route
+              exact="true"
+              path="/Requests_Permissions"
+              element={<Requests_Permissions />}
+            />
           </>
         </Routes>
       </BrowserRouter>

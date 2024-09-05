@@ -1,14 +1,24 @@
 // frontend/src/components/Sidebar.jsx
 
 import React, { useEffect, useRef, useState } from "react";
-import { FiX, FiMenu, FiGrid, FiUsers, FiSettings } from "react-icons/fi";
+import {
+  FiX,
+  FiMenu,
+  FiGrid,
+  FiUsers,
+  FiSettings,
+  FiLogOut,
+} from "react-icons/fi";
 
 import { SidebarItem } from "./Link";
+import { useNavigate } from "react-router-dom";
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef(null);
   const buttonRef = useRef(null);
+
+  const navigate = useNavigate();
 
   const closeSidebar = (event) => {
     if (
@@ -64,13 +74,28 @@ export const Sidebar = () => {
             )}
           </div>
           <ul className="flex flex-col align-middle space-y-4 overflow-hidden">
-            <SidebarItem to="/logs" name="Audit logs" icon={<FiGrid />} />
-            <SidebarItem to="/wallet" name="wallet" icon={<FiUsers />} />
+            <SidebarItem to="/dashboard" name="Dashboard" icon={<FiGrid />} />
+            <SidebarItem to="/wallet" name="Wallet" icon={<FiUsers />} />
             <SidebarItem
-              to="/requests-permissions"
+              to="/requests_permissions"
               name="Requests & Permissions"
               icon={<FiSettings />}
             />
+          </ul>
+          <ul className="overflow-hidden">
+            <li className="flex items-center">
+              <button
+                title="Logout"
+                type="button"
+                onClick={() => navigate("/home")}
+                className="flex items-center hover:bg-gray-200 rounded-lg px-1 py-2 w-full"
+              >
+                <FiLogOut className="text-2xl text-red-600" />
+                {isOpen && (
+                  <span className="ml-2 text-xl text-red-600">Home</span>
+                )}
+              </button>
+            </li>
           </ul>
         </div>
       </div>

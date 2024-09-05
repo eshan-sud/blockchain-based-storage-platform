@@ -1,10 +1,10 @@
 // frontend/src/components/Dashbaord.jsx
 
 import React, { useState, useEffect } from "react";
-import { Sidebar } from "./Sidebar";
 import { Web3Provider } from "@ethersproject/providers";
 import { ethers } from "ethers";
 import MyContractABI from "../abi/MyContractABI.json";
+import { Sidebar } from "./Sidebar";
 
 export const Dashboard = () => {
   const contractAddress = "0x728b5D181069baC9A5FEa09738A6D9Dc0fC543B4";
@@ -41,7 +41,7 @@ export const Dashboard = () => {
     };
 
     init();
-  }, []); // Run this effect only once on component mount
+  }, []);
 
   // Function to read data from the smart contract
   const readDataFromContract = async () => {
@@ -82,9 +82,17 @@ export const Dashboard = () => {
   };
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", flexDirection: "row" }}>
       <Sidebar />
-      <div style={{ marginLeft: "250px", padding: "20px", width: "100%" }}>
+      <div
+        style={{
+          padding: "20px",
+          marginLeft: "250px",
+          width: "100%",
+          boxSizing: "border-box",
+          marginTop: "100px",
+        }}
+      >
         <h2>Upload Files</h2>
         <div style={{ display: "flex", gap: "20px" }}>
           <input
