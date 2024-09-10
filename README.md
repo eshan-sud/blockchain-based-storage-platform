@@ -17,13 +17,14 @@ This project is a decentralized application designed to securely manage personal
 
 - **Frontend:** React.js for the user interface.
 - **Backend:** Node.js with Express for the server.
-- **Blockchain:** Ethereum with Smart Contracts (using Solidity) and Web3.js for interaction.
+- **Blockchain:** Used Solidity to write Smart Contracts and Web3.js for interaction.
 - **Database:** MongoDB for storing non-sensitive user data.
 - **Wallet Integration:** MetaMask for user authentication and transaction signing.
 
 ## Future Scaling
 
 - **Decentralized Database:** Plan to implement a decentralized database for storing user files and data.
+- **UI:** Plan to improve the UI for better user experience
 
 ## Getting Started
 
