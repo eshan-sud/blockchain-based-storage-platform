@@ -50,7 +50,7 @@ Ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
 3. **Run the app**
 
    ```bash
-   npm run
+   npm start
    ```
 
 4. **Test the app**
