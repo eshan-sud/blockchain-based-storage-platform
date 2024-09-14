@@ -1,5 +1,8 @@
 # Blockchain-Based Storage Platform (Secure It)
 
+<img src="https://github.com/user-attachments/assets/d8de5346-1622-4339-a847-a4d9fb78f98d" width=500px />
+
+
 ## Overview
 
 This project is a decentralized application designed to securely manage personal data using blockchain technology. It provides users with the ability to upload, manage, and control access to their data while leveraging the Ethereum blockchain for secure, immutable transactions.
