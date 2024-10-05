@@ -1,4 +1,4 @@
-# Blockchain-Based Storage Platform (Secure It)
+# SecureIt - Blockchain-Based Storage Platform
 
 <img src="https://github.com/user-attachments/assets/d8de5346-1622-4339-a847-a4d9fb78f98d" width=500px />
 
